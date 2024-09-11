@@ -9,7 +9,7 @@ export default function Home() {
       style: {
         background: 'linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)',
       },
-      items: ['几乎所有常用功能', '查询次数300次/月2222'],
+      items: ['几乎所有常用功能', '查询次数300次/月'],
     },
     {
       title: '订阅版',

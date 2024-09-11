@@ -1,5 +1,6 @@
 import styles from './index.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import classNames from 'classnames'
 
@@ -28,7 +29,15 @@ export default function HomeBanner() {
 
   return (
     <section className={styles.homeBanner}>
-      <Swiper spaceBetween={50} slidesPerView={1} loop={true}>
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+        }}
+      >
         {list.map((item) => (
           <SwiperSlide key={item.title}>
             <div className="font-bold text-4xl sm:text-5xl sm:leading-none	">

@@ -10,7 +10,7 @@ export default function HomeFunction() {
     {
       title: '权限控制',
       desc: '分类、网站可配置仅自己可见',
-      src: '/chrome.svg',
+      src: '/auth.svg',
     },
     {
       title: '书签导入',
@@ -38,7 +38,7 @@ export default function HomeFunction() {
       src: '/card.svg',
     },
     {
-      title: '相应设计',
+      title: '响应设计',
       desc: '强大的响应式系统设计',
       src: '/respon.svg',
     },
@@ -50,13 +50,17 @@ export default function HomeFunction() {
         强大的特性
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-16">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-10 sm:gap-y-16">
         {list.map((item) => (
           <div
             key={item.title}
-            className="text-center flex flex-col items-center justify-center"
+            className="text-center flex flex-col items-center justify-start"
           >
-            <img src={item.src} className="w-14 h14" loading="lazy" />
+            <img
+              src={item.src}
+              className="w-14 h-14 min-w-14 min-h-14"
+              loading="lazy"
+            />
             <div className="mt-4 text-2xl font-bold text-black">
               {item.title}
             </div>

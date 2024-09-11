@@ -13,7 +13,7 @@ export default function Footer() {
           <div className={styles.title}>关注我们</div>
           <div className={styles.text}>
             <a href="https://github.com/xjh22222228/nav" target="_blank">
-              Github
+              GitHub
             </a>
           </div>
           <div className={styles.text}>
