@@ -2,11 +2,20 @@ import React from 'react'
 import Layout from '@/components/layout'
 import Head from 'next/head'
 import '@/styles/globals.css'
+import '../i18n'
+import { useTranslation } from 'react-i18next'
 
 export default function App({ Component, pageProps }) {
+  const { i18n, t } = useTranslation()
+
   React.useEffect(() => {
     if (window.LA) {
       window.LA.init({ id: '3JG50cSVuHLeRPeV', ck: '3JG50cSVuHLeRPeV' })
+    }
+
+    const language = localStorage.getItem('language')
+    if (language) {
+      i18n.changeLanguage(language)
     }
   }, [])
 

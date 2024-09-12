@@ -1,45 +1,48 @@
 import styles from './index.module.scss'
+import { useTranslation } from 'react-i18next'
 
 export default function HomeFunction() {
+  const { t } = useTranslation()
+
   const list = [
     {
-      title: '平台选择',
-      desc: '支持GitHub、Gitee',
+      title: t('platform'),
+      desc: t('platformDesc'),
       src: '/github.svg',
     },
     {
-      title: '权限控制',
-      desc: '分类、网站可配置仅自己可见',
+      title: t('access'),
+      desc: t('accessDesc'),
       src: '/auth.svg',
     },
     {
-      title: '书签导入',
-      desc: '支持所有浏览器书签导入',
+      title: t('importBook'),
+      desc: t('importBookDesc'),
       src: '/chrome.svg',
     },
     {
-      title: '书签导出',
-      desc: '一键导出所有数据到浏览器书签',
+      title: t('exportBook'),
+      desc: t('exportBookDesc'),
       src: '/chrome.svg',
     },
     {
-      title: '查询数据',
-      desc: '直查标题、图标、描述，超便捷',
+      title: t('queryData'),
+      desc: t('queryDataDesc'),
       src: '/search.svg',
     },
     {
-      title: '部署平台',
-      desc: '可选Fork、自有部署模式',
+      title: t('deploymentPlatform'),
+      desc: t('deploymentPlatformDesc'),
       src: '/tool.svg',
     },
     {
-      title: '多种主题',
-      desc: '多种主题、卡片风格设计',
+      title: t('theme'),
+      desc: t('themeDesc'),
       src: '/card.svg',
     },
     {
-      title: '响应设计',
-      desc: '强大的响应式系统设计',
+      title: t('responsiveDesign'),
+      desc: t('responsiveDesignDesc'),
       src: '/respon.svg',
     },
   ]
@@ -47,10 +50,10 @@ export default function HomeFunction() {
   return (
     <section className={styles.function}>
       <div className="font-bold text-black text-4xl mb-14 sm:text-5xl">
-        强大的特性
+        {t('features')}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-10 sm:gap-y-16">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 sm:gap-y-16">
         {list.map((item) => (
           <div
             key={item.title}

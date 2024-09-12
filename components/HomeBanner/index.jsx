@@ -3,22 +3,25 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import classNames from 'classnames'
+import { useTranslation } from 'react-i18next'
 
 export default function HomeBanner() {
+  const { t } = useTranslation()
+
   const list = [
     {
-      title: '新一代导航网站',
-      description: '强大、免费、简单、易用、轻量级、一键部署、降低成本',
+      title: t('newNav'),
+      description: t('newNavDesc'),
       src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/4.png',
     },
     {
-      title: '脱离传统概念',
-      description: '没有数据库、没有服务端、几乎零成本',
+      title: t('breaking'),
+      description: t('breakingDesc'),
       src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/1.png',
     },
     {
-      title: '开箱即用',
-      description: '支持所有浏览器书签导入',
+      title: t('outBox'),
+      description: t('outBoxDesc'),
       src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/6.png',
     },
   ]
@@ -53,7 +56,7 @@ export default function HomeBanner() {
             </div>
             <div className="flex justify-center mb-8">
               <div className={styles.btn} onClick={go}>
-                免费部署
+                {t('freeDep')}
                 <img src="/arrow-r.svg" className={styles.arrow} />
               </div>
             </div>

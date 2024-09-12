@@ -1,15 +1,17 @@
 import styles from './index.module.scss'
 import classNames from 'classnames'
+import { useTranslation } from 'react-i18next'
 
 export default function HomeFunction() {
   const list = [1, 2, 3, 4, 5, 6]
+  const { t } = useTranslation()
 
   return (
     <section className={styles.people}>
       <div className="font-bold text-black text-4xl mb-5 sm:text-5xl">
-        他们正在使用发现导航
+        {t('using')}
       </div>
-      <div className="mb-12 text-lg text-gray-400">分享、价值、发现</div>
+      <div className="mb-12 text-lg text-gray-400">{t('value')}</div>
 
       <div className={styles.mask}>
         {list.map((idx) => (

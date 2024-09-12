@@ -1,60 +1,62 @@
+import { useTranslation } from 'react-i18next'
 import styles from './pricing.module.scss'
+import classNames from 'classnames'
 
 export default function Home() {
+  const { t, i18n } = useTranslation()
+  const isEn = i18n.language === 'en'
+
   const list = [
     {
-      title: '免费版',
-      desc: '满足日常业务使用',
+      title: t('freeVersion'),
+      desc: t('freeVersionDesc'),
       price: 0,
       style: {
         background: 'linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)',
       },
-      items: ['几乎所有常用功能', '查询次数300次/月'],
+      items: [t('functions'), t('queryCount')],
+      widthClass: isEn ? 'w-full' : 'w-40',
     },
     {
-      title: '订阅版',
-      desc: '尝鲜一下',
+      title: t('subeVersion'),
+      desc: t('giveTry'),
       price: 99,
       style: {
         background:
           'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
       },
-      unit: '/年',
-      items: [
-        '用户收录提交/通知',
-        '导出到浏览器书签',
-        '一个全站域名/支持更改',
-        '查询次数不限',
-      ],
+      unit: '/' + t('year'),
+      items: [t('submitNot'), t('exportBrowser'), t('oneDomain'), t('unlimit')],
+      widthClass: isEn ? 'w-full' : 'w-48',
     },
     {
-      title: '永久版',
-      desc: '在各种场景下都能随心所欲',
+      title: t('permanentVersion'),
+      desc: t('highlyDesc'),
       price: 299,
-      subtitle: '强烈推荐',
+      subtitle: t('highly'),
       style: {
         background: 'black',
       },
       items: [
-        '自有部署',
-        '导出到浏览器书签',
-        '用户收录提交/通知',
-        '没有域名限制',
-        '查询次数不限',
-        '商业用途',
-        '一对一技术支持',
+        t('ownDep'),
+        t('exportBrowser'),
+        t('submitNot'),
+        t('domainNoLimit'),
+        t('unlimit'),
+        t('commercial'),
+        t('techSupport'),
       ],
+      widthClass: isEn ? 'w-60' : 'w-40',
     },
   ]
 
   return (
     <div className={styles.pricing}>
       <div className="text-center font-bold text-4xl sm:text-5xl pt-16">
-        选择适合的版本
+        {t('chooseVer')}
       </div>
       <div className="text-center font-bold text-base pt-5 text-slate-600">
-        发送到：xjh22222228@gmail.com
-        （备注支付凭证，我们会在24小时内发送授权码回复您）
+        {t('sendMail')}
       </div>
 
       <div className={styles.pricingBox}>
@@ -78,10 +80,15 @@ export default function Home() {
                 )}
               </div>
               {item.items.map((text) => (
-                <div key={text} className="flex justify-center px-8">
-                  <div className="flex w-48 justify-start items-center mt-1.5">
+                <div key={text} className="flex justify-center px-4">
+                  <div
+                    className={classNames(
+                      'flex justify-start items-center mt-1.5',
+                      item.widthClass
+                    )}
+                  >
                     <img src="/ok.svg" className="w-4 mr-2" />
-                    {text}
+                    <span className="text-left">{text}</span>
                   </div>
                 </div>
               ))}

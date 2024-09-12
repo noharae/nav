@@ -1,22 +1,41 @@
 import { useRouter } from 'next/router'
 import styles from './index.module.scss'
+import { useTranslation } from 'react-i18next'
 
 export default function Header() {
   const router = useRouter()
+  const { i18n, t } = useTranslation()
+  const language = i18n.language
+
+  function toggleI18n() {
+    const value = language === 'en' ? 'zh-CN' : 'en'
+    i18n.changeLanguage(value)
+    localStorage.setItem('language', value)
+  }
 
   return (
     <header className={styles.headerWrap}>
       <div className={styles.headerBox}>
-        <div className={styles.titleBox} onClick={() => router.push('/')}>
-          <img
-            src="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo.svg"
-            className={styles.logo}
-          />
-          <span className={styles.title}>发现导航</span>
+        <div className="flex items-center">
+          <div className={styles.titleBox} onClick={() => router.push('/')}>
+            <img
+              src="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo.svg"
+              className={styles.logo}
+            />
+            <span className={styles.title}>{t('title')}</span>
+          </div>
+
+          <div className={styles.items} onClick={() => router.push('/pricing')}>
+            {t('pricing')}
+          </div>
         </div>
 
-        <div className={styles.items} onClick={() => router.push('/pricing')}>
-          价格
+        <div
+          className="flex items-center cursor-pointer hover:text-blue-400 select-none"
+          onClick={toggleI18n}
+        >
+          <img src="/i18n.svg" className="w-6" />
+          <span className="ml-1.5">{t('language')}</span>
         </div>
       </div>
     </header>
