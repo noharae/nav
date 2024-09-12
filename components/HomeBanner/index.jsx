@@ -9,17 +9,17 @@ export default function HomeBanner() {
     {
       title: '新一代导航网站',
       description: '强大、免费、简单、易用、轻量级、一键部署、降低成本',
-      src: '/banner1.png',
+      src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/4.png',
     },
     {
       title: '脱离传统概念',
       description: '没有数据库、没有服务端、几乎零成本',
-      src: '/banner2.png',
+      src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/1.png',
     },
     {
       title: '开箱即用',
       description: '支持所有浏览器书签导入',
-      src: '/banner3.png',
+      src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/6.png',
     },
   ]
 

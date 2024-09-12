@@ -4,7 +4,7 @@ export default function HomeFunction() {
   const list = [
     {
       title: '平台选择',
-      desc: '支持Github、Gitee',
+      desc: '支持GitHub、Gitee',
       src: '/github.svg',
     },
     {

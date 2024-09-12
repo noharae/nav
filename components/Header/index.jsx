@@ -8,7 +8,10 @@ export default function Header() {
     <header className={styles.headerWrap}>
       <div className={styles.headerBox}>
         <div className={styles.titleBox} onClick={() => router.push('/')}>
-          <img src="/logo.svg" className={styles.logo} />
+          <img
+            src="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo.svg"
+            className={styles.logo}
+          />
           <span className={styles.title}>发现导航</span>
         </div>
 
