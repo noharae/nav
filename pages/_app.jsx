@@ -6,7 +6,7 @@ import '../i18n'
 import { useTranslation } from 'react-i18next'
 
 export default function App({ Component, pageProps }) {
-  const { i18n, t } = useTranslation()
+  const { i18n } = useTranslation()
 
   React.useEffect(() => {
     if (window.LA) {

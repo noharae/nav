@@ -5,7 +5,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        title: 'Discover Navigation',
+        title: 'Discover',
         language: 'English',
         pricing: 'Pricing',
         contact: 'Contact',

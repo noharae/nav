@@ -25,7 +25,10 @@ export default function Header() {
             <span className={styles.title}>{t('title')}</span>
           </div>
 
-          <div className={styles.items} onClick={() => router.push('/pricing')}>
+          <div
+            className="font-bold ml-4 sm:ml-12 cursor-pointer hover:text-blue-700"
+            onClick={() => router.push('/pricing')}
+          >
             {t('pricing')}
           </div>
         </div>
