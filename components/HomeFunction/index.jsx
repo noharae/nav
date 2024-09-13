@@ -6,9 +6,9 @@ export default function HomeFunction() {
 
   const list = [
     {
-      title: t('platform'),
-      desc: t('platformDesc'),
-      src: '/github.svg',
+      title: t('pureStatic'),
+      desc: t('pureStaticDesc'),
+      src: '/IE.svg',
     },
     {
       title: t('access'),
@@ -44,6 +44,26 @@ export default function HomeFunction() {
       title: t('responsiveDesign'),
       desc: t('responsiveDesignDesc'),
       src: '/respon.svg',
+    },
+    {
+      title: t('bind'),
+      desc: t('bindDesc'),
+      src: '/bind.svg',
+    },
+    {
+      title: t('submit'),
+      desc: t('submitDesc'),
+      src: '/add.svg',
+    },
+    {
+      title: t('inspect'),
+      desc: t('inspectDesc'),
+      src: '/inspect.svg',
+    },
+    {
+      title: t('platform'),
+      desc: t('platformDesc'),
+      src: '/github.svg',
     },
   ]
 
