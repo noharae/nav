@@ -1,4 +1,6 @@
+import React from 'react'
 import styles from './index.module.scss'
+import ClassScroll from 'class-scroll'
 import { useTranslation } from 'react-i18next'
 
 export default function HomeFunction() {
@@ -67,6 +69,24 @@ export default function HomeFunction() {
     },
   ]
 
+  React.useEffect(() => {
+    const items = document.querySelectorAll('.func-item')
+    const params = []
+    items.forEach((el) => {
+      params.push({
+        el,
+        className: 'animate__animated animate__fadeInUp',
+        threshold: 0.5,
+      })
+    })
+    const classScroll = new ClassScroll(params)
+    classScroll.init()
+
+    return () => {
+      classScroll.destroy()
+    }
+  }, [])
+
   return (
     <section className={styles.function}>
       <div className="font-bold text-black text-4xl mb-14 sm:text-5xl">
@@ -77,7 +97,7 @@ export default function HomeFunction() {
         {list.map((item) => (
           <div
             key={item.title}
-            className="text-center flex flex-col items-center justify-start"
+            className="func-item text-center flex flex-col items-center justify-start"
           >
             <img
               src={item.src}
