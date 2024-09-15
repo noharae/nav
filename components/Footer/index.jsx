@@ -14,16 +14,56 @@ export default function Footer() {
           </div>
           <div className={styles.text}>{t('purchase')}：xjh22222228</div>
         </div>
+
         <div>
           <div className={styles.title}>{t('follow')}</div>
           <div className={styles.text}>
-            <a href="https://github.com/xjh22222228/nav" target="_blank">
+            <a
+              href="https://github.com/xjh22222228/nav"
+              target="_blank"
+              className="hover:text-blue-700"
+            >
               GitHub
             </a>
           </div>
           <div className={styles.text}>
-            <a href="https://gitee.com/xiejiahe/nav" target="_blank">
+            <a
+              href="https://gitee.com/xiejiahe/nav"
+              target="_blank"
+              className="hover:text-blue-700"
+            >
               Gitee
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className={styles.title}>{t('techSupport')}</div>
+          <div className={styles.text}>
+            <a
+              href="https://github.com/xjh22222228/beautiful-window"
+              target="_blank"
+              className="hover:text-blue-700"
+            >
+              Beautiful window
+            </a>
+          </div>
+          <div className={styles.text}>
+            <a
+              href="https://github.com/xjh22222228/class-scroll"
+              target="_blank"
+              className="hover:text-blue-700"
+            >
+              Class scroll
+            </a>
+          </div>
+          <div className={styles.text}>
+            <a
+              href="https://nextjs.org/"
+              target="_blank"
+              className="hover:text-blue-700"
+            >
+              Next.js
             </a>
           </div>
         </div>

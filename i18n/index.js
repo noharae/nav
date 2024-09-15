@@ -72,6 +72,7 @@ i18n.use(initReactI18next).init({
         inspectDesc: 'Batch detection of website survival status',
         pureStatic: 'Pure static',
         pureStaticDesc: 'Pure static',
+        techSupport: 'Technical support',
       },
     },
     'zh-CN': {
@@ -140,6 +141,7 @@ i18n.use(initReactI18next).init({
         inspectDesc: '批量检测网站存活状态',
         pureStatic: '完全静态',
         pureStaticDesc: '开箱即用，无需部署服务端，包含后台系统',
+        techSupport: '技术支持',
       },
     },
   },
