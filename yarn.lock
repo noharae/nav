@@ -257,10 +257,10 @@ caniuse-lite@^1.0.30001579:
   optionalDependencies:
     fsevents "~2.3.2"
 
-class-scroll@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/class-scroll/-/class-scroll-0.0.7.tgz#887cdbd41ad73528f3152946a6fa533277dcf338"
-  integrity sha512-7glohG9NFc08ge/o7SeXzKZ8cEmtv43MM3YVcu+N27ShPy8Q90eccQZKZf2XGUxuHXEvl41cYXKbyXAqEs73Dg==
+class-scroll@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/class-scroll/-/class-scroll-0.0.8.tgz#87f6222b38493544a40ae41d266313cd79c58db1"
+  integrity sha512-cgdZ2xsjpq+iNPK+YzEENzpojflhzJu4UQAgz01aEbiOTSRhUYn2z0Yw53uBkYjyYlRhn5sLHpvXbUR0I3tvWQ==
 
 classnames@^2.5.1:
   version "2.5.1"
