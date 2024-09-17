@@ -15,6 +15,11 @@ export default function HomeBanner() {
       src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/4.png',
     },
     {
+      title: t('why'),
+      description: t('whyDesc'),
+      src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/3.png',
+    },
+    {
       title: t('breaking'),
       description: t('breakingDesc'),
       src: 'https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/1.png',

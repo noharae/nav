@@ -81,6 +81,9 @@ i18n.use(initReactI18next).init({
         tailwindcss: 'Tailwindcss',
         tailwindcssDesc:
           'Built in Tailwindcss, no writing style required, easy customization at the footer',
+        why: 'Why do we have to choose',
+        whyDesc:
+          'Open source and continuous maintenance may only involve discovering navigation',
       },
     },
     'zh-CN': {
@@ -156,6 +159,8 @@ i18n.use(initReactI18next).init({
         darkModeDesc: '支持暗黑模式切换',
         tailwindcss: 'Tailwindcss',
         tailwindcssDesc: '内置Tailwindcss，无需书写样式，底部轻松定制',
+        why: '为什么一定要选择',
+        whyDesc: '开源且持续维护可能只有发现导航',
       },
     },
   },
