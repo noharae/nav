@@ -67,6 +67,21 @@ export default function HomeFunction() {
       desc: t('platformDesc'),
       src: '/github.svg',
     },
+    {
+      title: t('thoroughly'),
+      desc: t('thoroughlyDesc'),
+      src: '/shoot.svg',
+    },
+    {
+      title: t('darkMode'),
+      desc: t('darkModeDesc'),
+      src: '/dark.svg',
+    },
+    {
+      title: t('tailwindcss'),
+      desc: t('tailwindcssDesc'),
+      src: '/tailwindcss.svg',
+    },
   ]
 
   React.useEffect(() => {

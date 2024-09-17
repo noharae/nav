@@ -73,6 +73,14 @@ i18n.use(initReactI18next).init({
         pureStatic: 'Pure static',
         pureStaticDesc: 'Pure static',
         techSupport: 'Technical support',
+        thoroughly: 'Thoroughly tempered',
+        thoroughlyDesc:
+          'Since its launch in 2018, it has iterated N versions, which are super powerful and super mature',
+        darkMode: 'Dark mode',
+        darkModeDesc: 'Support switching between dark mode',
+        tailwindcss: 'Tailwindcss',
+        tailwindcssDesc:
+          'Built in Tailwindcss, no writing style required, easy customization at the footer',
       },
     },
     'zh-CN': {
@@ -142,6 +150,12 @@ i18n.use(initReactI18next).init({
         pureStatic: '完全静态',
         pureStaticDesc: '开箱即用，无需部署服务端，包含后台系统',
         techSupport: '技术支持',
+        thoroughly: '千锤百炼',
+        thoroughlyDesc: '2018年上线至今迭代N个版本，超级强大、超级成熟',
+        darkMode: '暗黑模式',
+        darkModeDesc: '支持暗黑模式切换',
+        tailwindcss: 'Tailwindcss',
+        tailwindcssDesc: '内置Tailwindcss，无需书写样式，底部轻松定制',
       },
     },
   },
