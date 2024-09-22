@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="icon"
-          href="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo.svg"
+          href="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo2.svg"
         />
         <script
           charSet="UTF-8"
