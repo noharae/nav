@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex items-center">
           <div className={styles.titleBox} onClick={() => router.push('/')}>
             <img
-              src="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo.svg"
+              src="https://gcore.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/logo2.svg"
               className={styles.logo}
             />
             <span className={styles.title}>{t('title')}</span>
